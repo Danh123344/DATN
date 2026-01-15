@@ -1,5 +1,5 @@
-HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG ĐỒ ÁN SHOP SÁCH (PHP NATIVE)
-Hệ thống quản lý và bán sách trực tuyến được xây dựng bằng ngôn ngữ PHP thuần (Native PHP), sử dụng cơ sở dữ liệu MySQL.
+HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG ĐỒ ÁN (PHP NATIVE)
+Hệ thống  trực tuyến được xây dựng bằng ngôn ngữ PHP thuần (Native PHP), sử dụng cơ sở dữ liệu MySQL.
 🛠 Yêu cầu hệ thống
 XAMPP (Phiên bản PHP 7.4 hoặc 8.x).
 Trình duyệt web (Chrome, Edge, Firefox...).
