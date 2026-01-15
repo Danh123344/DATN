@@ -1,16 +1,30 @@
-# Web 2 - Nhóm 2 thầy Sang
-|STT | MSSV            | Họ tên                                                                       |
-|:--:| :-------------: |------------------------------------------------------------------------------|
-|1   | 3119410180      | [Ngô Phú Khang](https://www.facebook.com/ngokhang2001sgunkey/)               |
-|2   | 3119410204      | [Trần Hữu Khương](https://www.facebook.com/JB.TranHuuKhuong/)                |
-|3   | 3119410215      | [Võ Hoàng Kiệt](https://www.facebook.com/thekids.1002/)                      |
-|4   | 3119410354      | [Lê Thái Thanh Sơn](https://www.facebook.com/profile.php?id=100041348190068) |
-### Link file thiết kế (figma)
-https://www.figma.com/file/7mHzoDjzrySYwHSrLskVty/Demo_PetShop?node-id=0%3A1
-### Hướng dẫn:
-1. Tạo database MySQL có tên "petshop".
-2. Thực hiện import file "./database/petshop.sql"
-3. Để vào quản lý admin, truy cập đường dẫn: "localhost/Demo_Pet-Shop/admin/"
-## Được viết bằng bootstrap-4, jquery-3.2.1, chạy tốt nhất trên GoogleChrome (riêng trang Sản phẩm bất lực quá nên không responsive)
-#### Cập nhật: Đã responsive trang sản phẩm, dù hơi chuối nhưng tạm chấp nhận :))
-### Đồ án được thực hiện trong vòng 2 ngày nên chức năng không đầy đủ.
+HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG ĐỒ ÁN SHOP SÁCH (PHP NATIVE)
+Hệ thống quản lý và bán sách trực tuyến được xây dựng bằng ngôn ngữ PHP thuần (Native PHP), sử dụng cơ sở dữ liệu MySQL.
+🛠 Yêu cầu hệ thống
+XAMPP (Phiên bản PHP 7.4 hoặc 8.x).
+Trình duyệt web (Chrome, Edge, Firefox...).
+🚀 Các bước cài đặt
+1. Chuẩn bị Cơ sở dữ liệu
+Khởi động Apache và MySQL trong bảng điều khiển XAMPP.
+Truy cập vào đường dẫn: http://localhost/phpmyadmin/.
+Tạo một cơ sở dữ liệu mới với tên là sachshop.
+Chọn cơ sở dữ liệu vừa tạo, nhấn vào thẻ Import.
+Chọn file .sql nằm trong thư mục database của project này để tải lên.
+2. Cấu hình kết nối Database
+Để code có thể kết nối với MySQL trên máy của bạn, hãy kiểm tra file sau:
+Đường dẫn: service/config.php
+Nội dung cần lưu ý:
+PHP
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'root'); // Username mặc định của XAMPP
+define('DB_PASSWORD', '');     // Password mặc định là để trống
+define('DB_DATABASE', 'sachshop'); // Đảm bảo tên này khớp với tên bạn đã tạo
+3. Chạy Website
+Copy toàn bộ thư mục project vào đường dẫn: C:\xampp\htdocs\.
+Mở trình duyệt và truy cập: http://localhost/DATN/ (hoặc tên thư mục bạn đặt trong htdocs).
+📂 Cấu trúc thư mục chính
+/admin: Trang quản trị dành cho người quản lý.
+/css, /js, /img: Chứa các file giao diện và hình ảnh sản phẩm.
+/service: Chứa các file xử lý logic và kết nối cơ sở dữ liệu (Quan trọng nhất).
+/database: Chứa file backup dữ liệu MySQL.
+index.php: Trang chủ của website.
